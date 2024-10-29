@@ -112,8 +112,6 @@ body{
         color: #fff;
         z-index: 2;
     }
-    
-    /* -------------- menu ----------------------- */
     .banner{
         background-image: url('../img/homemade-tasty-beef-burger-4BM65XU\ \(1\).png');
         background-repeat: no-repeat;
@@ -140,14 +138,27 @@ body{
         justify-content: center;
     }
     .banner>h2{
-        font-family: "Nunito Sans", sans-serif;
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 127%;
-        text-transform: uppercase;
-        color: #fff;
+position: absolute;
+height: 76px;
+left: 0%;
+right: 55.52%;
+top: calc(50% - 76px/2 - 50px);
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 900;
+font-size: 60px;
+line-height: 76px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+
+
     }
     .text-banner{
+        z-index: 2;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
         font-size: 15px;
