@@ -33,7 +33,7 @@ body{
     .menu{
         display: flex;
     }
-    .menu>li{
+    .menu>li>a{
         margin-right: 46px;
     }
     .menu>li:last-child{
@@ -55,26 +55,281 @@ body{
         bottom: 0;
         left: 0;
         border-radius: 1px;
+        
     }
     .header-menu>button{
         display: flex;
         align-items: center;
         font-family: "Open Sans", sans-serif;
-        font-weight: 700px;
+        font-weight: 700;
         font-size: 15px;
         color: #443737;
     }
     .header-menu>button>img{
-        margin-right: 5px;
+        margin-right: 5Spx;
     }
     .header-bottom{
-        background-image: url('../img/Main.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 142px;
-        padding-bottom: 142px;
-
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1920px;
+        height: 478px;
+        /* left: 0px;
+        top: 108px; */
     }
+
+    .header-bottom>img {
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .header-bottom>p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        color: #dedede;
+        z-index: 2; 
+    }
+
+    .header-bottom>p:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .header-bottom>p>a{
         color: #dedede;
+    }
+
+    .header-bottom>h1{
+        color: #dedede; 
+        text-align: center;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 79px;
+        color: #fff;
+        z-index: 2;
+    }
+    
+    /* -------------- menu ----------------------- */
+    .banner{
+        background-image: url('../img/homemade-tasty-beef-burger-4BM65XU\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0px 100px 100px;
+        margin-top: 140px;
+        margin-bottom: 100px;
+    }
+    .marker{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #F37335;
+        display: inline-block;
+        padding: 5px 18.5px 5px;
+        border-radius: 14px;
+        width: 95px;
+        height: 28px;
+        display: flex;flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner>h2{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 127%;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .text-banner{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #faf9f9;
+        max-width: 308px;
+    }
+    
+    .banner>button{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1e2f40; 
+        background: #fbb731;
+        border-radius: 5px;
+        width: 170px;
+        height: 58px;
+    }
+    
+    /* -------------- burger box ----------------------- */
+    
+    .title{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 127%;
+        text-transform: uppercase;
+        color: #1b2a49;
+        margin-bottom: 34px;
+    }
+    .burgers-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .burgers-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .burgers-item>h3{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 127%;
+        text-align: center;
+        color: #1b2a49;
+    }
+    .burgers-item>p{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        text-align: center;
+        color: #979797;
+    }
+    
+    .burgers-item>button{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1e2f40;
+        background: #fbb731;
+        border-radius: 5px;
+        padding: 10px 30px 10px 30px;
+        margin-bottom:60px ;
+        
+    }
+    
+    /* -------------- footer ----------------------- */
+    
+    .footer{
+        background: #1e2f40;
+        padding-top: 110px;
+        padding-bottom: 106px;
+    }
+     /* --------------  margin-right: 10%; ----------------------- */
+    .footer1{   
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .basic-item>a{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #dedede;
+        margin-bottom: 9px;
+        }
+        
+    .basic-title{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 190%;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+    
+    .info{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .basic-item:last-child{
+        margin-bottom: 0;
+    }
+    
+    .street-time{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #dedede;
+    }
+    .basic-bitem{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 160%;
+        color: #faf9f9;
+    }
+    .tel>a{
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 190%;
+        text-transform: uppercase;
+        color: #fbb731;
+        display: flex;
+    }
+    
+    /*adaptive*/
+    @media (max-width:768px) {
+        .container{
+            padding: 0 15px;
+        }
+        .menu>li{
+            margin-right: 22px;
+        }
+        .header-bottom{
+            background-position: center;
+            
+        }
+        .banner{
+            background-position-x: -74px;
+            padding-left: 40px;
+            margin-top: 72px;
+            margin-bottom: 80px;
+        }
+        .burgers-item>img{
+            width: 359px;
+        }
+        .basic{
+            margin-right: 86px;
+            margin-left: 77px;
+        }
+        .info-basic{
+            margin-right: 0px;
+    
+        }
+        .tel{
+            margin-left: 77px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .info{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: flex-start;
+    
+        }
     }
